@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/styles.css";
+import "../assets/css/footer.css";
 
 const Footer = () => {
     return (
@@ -10,7 +11,7 @@ const Footer = () => {
             <a href="#" className="footer__icon"><i className='bx bxl-instagram' ></i></a>
             <a href="#" className="footer__icon"><i className='bx bxl-twitter' ></i></a>
         </div>
-        <p className="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        <p className="footer__copy">&#169; Yosaddis. All rigths reserved</p>
     </footer>
     )
 }
