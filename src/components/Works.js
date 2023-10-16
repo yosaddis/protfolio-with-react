@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/styles.css';
+import '../assets/css/work.css';
 import work1 from '../assets/img/work1.jpg';
 import work2 from '../assets/img/work2.jpg';
 import work3 from '../assets/img/work3.jpg';
