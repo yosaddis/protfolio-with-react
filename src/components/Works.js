@@ -1,38 +1,64 @@
 import React from 'react';
 import '../assets/css/styles.css';
 import '../assets/css/work.css';
-import work1 from '../assets/img/work1.jpg';
-import work2 from '../assets/img/work2.jpg';
-import work3 from '../assets/img/work3.jpg';
-import work4 from '../assets/img/work4.jpg';
-import work5 from '../assets/img/work5.jpg';
-import work6 from '../assets/img/work6.jpg';
+import '../assets/css/projectCard.css'
+import ProjectCard from './ProjectCard';
+
+import Awsomebooks from '../assets/img/Awsome-Books.png';
+import Bookstore from '../assets/img/Book-Store-app.png';
+import Portfolio from '../assets/img/Portfolio.png';
+import Rubyonrails from '../assets/img/Ruby-on-rails.png';
+import MealDB from '../assets/img/MealDB-react-app.png';
+import Libraryapp from '../assets/img/Library-app.png';
+
 
 const Works = () => {
-    return (
-        <section className="work section" id="work">
-            <h2 className="section-title">Work</h2>
+    
+    const projects = [
+        {
+          image: Awsomebooks,
+          project_title: 'Awsome Books',
+          languages: ['Java Script', 'HTML', 'CSS'],
+        },
+        {
+          image: Bookstore,
+          project_title: 'Book Store',
+          languages: ['React', 'Java Script', 'HTML', 'CSS'],
+        },
+        {
+          image: Portfolio,
+          project_title: 'Portfolio',
+          languages: ['Java Script', 'HTML', 'CSS'],
+        },
+        {
+          image: Rubyonrails,
+          project_title: 'Expense Tracker',
+          languages: ['Ruby', 'Ruby on Rails', 'HTML', 'CSS', 'Bootstrap'],
+        },
+        {
+          image: MealDB,
+          project_title: 'Eat Healthy',
+          languages: ['Language 10', 'Language 11'],
+        },
+        {
+          image: Libraryapp,
+          project_title: 'Library App',
+          languages: ['Ruby'],
+        },
+        // Add more project data as needed
+      ];
 
-            <div className="work__container bd-grid">
-                <a href="" className="work__img">
-                    <img src={work1} alt=""/>
-                </a>
-                <a href="" className="work__img">
-                    <img src={work2} alt=""/>
-                </a>
-                <a href="" className="work__img">
-                    <img src={work3} alt=""/>
-                </a>
-                <a href="" className="work__img">
-                    <img src={work4} alt=""/>
-                </a>
-                <a href="" className="work__img">
-                    <img src={work5} alt=""/>
-                </a>
-                <a href="" className="work__img">
-                    <img src={work6} alt=""/>
-                </a>
-            </div>
+    return (
+        <section className="works" id="work">
+            <h2 className="section-title">Github Projects</h2>
+            {projects.map((project, index) => (
+                <ProjectCard
+                key={index}
+                image={project.image}
+                project_title={project.project_title}
+                languages={project.languages}
+                />
+            ))}
         </section>
     );
 };
