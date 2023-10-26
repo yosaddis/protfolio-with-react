@@ -18,7 +18,7 @@ const Skills = () => {
                     <li>Redux</li>
                     <li>jQuery</li>
                     <li>CSS3</li>
-                    <li>Mobile Development</li>
+                    <li>XML</li>
                 </ul>
             </div>
 
@@ -27,9 +27,10 @@ const Skills = () => {
                 <ul className="skills-list">
                     <li>C#</li>
                     <li>Ruby</li>
-                    <li>Ruby on Rails</li>
+                    <li>ROR</li>
                     <li>Laravel</li>
-                    <li>SQL (PostgreSQL, MS-SQL)</li>
+                    <li>PostgreSQL</li>
+                    <li>MSSQL</li>
                 </ul>
                 </div>
 

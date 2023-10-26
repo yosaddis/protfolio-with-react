@@ -1,8 +1,14 @@
 import React from 'react';
 import '../assets/css/styles.css';
 import aboutImg from '../assets/img/about.jpg';
+import resume from '../assets/img/resume.pdf';
 
 const About = () => {
+
+    const resumeHandler = () => {
+        window.open(resume)
+    }
+
     return (
         <section className="about section " id="about">
               <h2 className="section-title">About</h2>
@@ -20,7 +26,9 @@ const About = () => {
                             What sets me apart is my unwavering enthusiasm for coding and my relentless drive to create products that solve real-world problems. I'm not only tech-savvy but also passionate about exploring new technologies, ensuring I can offer cutting-edge solutions. Additionally, my commitment to cybersecurity means I prioritize the safety and reliability of the software I develop.
                             <br/>   <br/>
                             Ultimately, my goal is to make a positive impact on people's lives through technology. With two popular apps on the Play Store, I've witnessed firsthand how technology can improve lives. I'm eager to bring this unique blend of technical excellence, passion, and customer-focused mindset to your team. <a href='#contact'> Contact me</a> for collaboration opportunities.
-                        </p>           
+                            <button onClick={resumeHandler} className="contact__button button">Get My Resume</button>
+                        </p>
+
                     </div>                                   
                 </div>
         </section>

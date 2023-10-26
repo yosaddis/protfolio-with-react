@@ -1,0 +1,129 @@
+.skill-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px lightgray solid;
+    padding: 0;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    background: #ebf0ee;
+    width: 327px;
+    height: 352px;
+    transition: box-shadow 0.4s ease-out;
+  }
+  
+  .skill-category:hover {
+    box-shadow: var(--shadow);
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .icon {
+    background-color: transparent;
+  }
+  
+  .skill-name {
+    font-size: 24px;
+    color: #344563;
+  }
+  .skill-list li {
+    background-color: #fff;
+    color: #0e5a3b;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1em 0.5em;
+    margin: 1em 0.5em;
+    border-radius: 5px;
+  }
+  
+  .card-languages li {
+    background: #ebf0ee;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0.5em;
+    margin: 0 0.5em;
+  }
+
+  .works {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    grid-template-rows: 200px repeat(5, 6fr);
+  }
+  
+  .works h1:first-child {
+    padding: 1em;
+  }
+  
+  .works h2:first-child::after {
+    content: '';
+    height: 4px;
+    width: 48px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 20px;
+    z-index: -1;
+    background: #36b37f;
+    border-radius: 8px;
+  }
+  
+  .work-card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 1em auto;
+    width: 369px;
+    height: 474px;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    transition: box-shadow 0.4s ease-out;
+  }
+  
+  .work-card:hover {
+    box-shadow: var(--shadow);
+  }
+  
+  .work-thumbnail {
+    overflow: hidden;
+    box-sizing: border-box;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background: #ebf0ee;
+    min-height: 220px;
+  }
+  
+  .work-thumbnail img {
+    width: 100%;
+    min-height: 220px;
+    object-fit: contain;
+  }  
+
+  @media (min-width: 768px) {
+  
+  .works {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px repeat(2, 1fr);
+  }
+
+  .works h2:first-child {
+    align-self: flex-end;
+    padding: 1em;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .works h2:first-child::after {
+    content: none;
+  }
+}
