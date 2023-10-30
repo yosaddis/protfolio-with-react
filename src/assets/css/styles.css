@@ -489,4 +489,7 @@ img {
   .home__img {
     width: 450px;
   }
+ /** .offcanvas-body{
+    display: none;
+  }**/
 }
