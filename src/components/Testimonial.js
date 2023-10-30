@@ -2,7 +2,7 @@ import React from 'react';
 import '../assets/css/styles.css'
 import perfil from '../assets/img/perfil.png'
 
-const Testimonials = () => {
+const Testimonial = () => {
     return (
         <div>
           Testimonials
@@ -10,4 +10,4 @@ const Testimonials = () => {
     );
 };
 
-export default Testimonials;
+export default Testimonial;
