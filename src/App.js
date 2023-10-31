@@ -1,4 +1,5 @@
-import { useState,useCallback,useEffect } from 'react';
+import { useEffect } from 'react';
+//import {ScrollReveal} from 'https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js';
 
 import './App.css';
 import Header from './components/Header';
