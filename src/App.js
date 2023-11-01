@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-//import {ScrollReveal} from 'https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js';
+//import _ from 'https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js';
 
 import './App.css';
 import Header from './components/Header';
@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Works from './components/Works';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Product from './components/Product';
 
 function App() {
   
@@ -56,19 +57,19 @@ function App() {
     }
     window.addEventListener('scroll', scrollActive);
 
-    /*===== SCROLL REVEAL ANIMATION =====*/
-    const sr = ScrollReveal({
-      origin: 'top',
-      distance: '60px',
-      duration: 2000,
-      delay: 200,
-      // reset: true
-    });
+    // /*===== SCROLL REVEAL ANIMATION =====*/
+    // const sr = _.ScrollReveal({
+    //   origin: 'top',
+    //   distance: '60px',
+    //   duration: 2000,
+    //   delay: 200,
+    //   // reset: true
+    // });
 
-    sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
-    sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', { delay: 400 });
-    sr.reveal('.home__social-icon', { interval: 200 });
-    sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
+    // sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
+    // sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', { delay: 400 });
+    // sr.reveal('.home__social-icon', { interval: 200 });
+    // sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
   }, []);
 
   
@@ -80,12 +81,14 @@ function App() {
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
         <title>Yoseph's Portfolio website</title>
         <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js" integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <div className="App">
             <Header />
             <Home />
             <About />
             <Skills />
             <Works />
+            <Product/>
             <Contact />
             <Footer />
         </div>
