@@ -49,7 +49,7 @@ const Header = () => {
         <header className="l-header">
             <nav className="nav bd-grid">
                 <div>
-                    <a href="#" className="nav__logo">Yoseph</a>
+                    <a href="https://www.google.com" className="nav__logo">Yoseph</a>
                 </div>
 
                 <div className="nav__menu" id="nav-menu">
@@ -57,7 +57,8 @@ const Header = () => {
                         <li className="nav__item"><a href="#home" className="nav__link active">Home</a></li>
                         <li className="nav__item"><a href="#about" className="nav__link">About</a></li>
                         <li className="nav__item"><a href="#skills" className="nav__link">Skills</a></li>
-                        <li className="nav__item"><a href="#work" className="nav__link">Work</a></li>
+                        <li className="nav__item"><a href="#work" className="nav__link">Projects</a></li>
+                        <li className="nav__item"><a href="#product" className="nav__link">Products</a></li>
                         <li className="nav__item"><a href="#contact" className="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -77,7 +78,10 @@ const Header = () => {
                             Skills
                             </li>
                             <li className="nav-item">
-                            Work
+                            Project
+                            </li>
+                            <li className="nav-item">
+                            Product
                             </li>
                             <li className="nav-item">
                             ContactM
