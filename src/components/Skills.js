@@ -52,14 +52,6 @@ const Skills = () => {
                 </div>
 
                 <div className="category">
-                <h3>Cybersecurity</h3>
-                <ul className="skills-list">
-                    <li>Cybersecurity best practices</li>
-                    <li>Secure coding techniques</li>
-                </ul>
-                </div>
-
-                <div className="category">
                 <h3>Professional Skills</h3>
                 <ul className="skills-list">
                     <li>Remote Pair-Programming</li>
@@ -71,17 +63,12 @@ const Skills = () => {
                 <div className="category">
                 <h3>Entrepreneurial Experience</h3>
                 <ul className="skills-list">
-                    <li>Founding and managing Sefed Systems</li>
-                    <li>Publishing apps on the Play Store</li>
+                    <li>Founding Startup</li>
+                    <li>Managing Products</li>
+                    <li>Working Independently</li>
                 </ul>
                 </div>
 
-                <div className="category">
-                <h3>Technological Exploration</h3>
-                <ul className="skills-list">
-                    <li>Eagerness to explore and adapt to new technologies</li>
-                </ul>
-            </div>
         </div>
     </section>
     );
