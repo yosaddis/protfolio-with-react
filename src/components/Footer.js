@@ -1,13 +1,11 @@
-import React from "react";
-import "../assets/css/styles.css";
-import "../assets/css/footer.css";
+import React from 'react';
+import '../assets/css/styles.css';
+import '../assets/css/footer.css';
 
-const Footer = () => {
-    return (
-    <footer className="footer">
-        <p className="footer__copy">&#169; Yosaddis. All rigths reserved</p>
-    </footer>
-    )
-}
+const Footer = () => (
+  <footer className="footer">
+    <p className="footer__copy">&#169; Yosaddis. All rigths reserved</p>
+  </footer>
+);
 
 export default Footer;

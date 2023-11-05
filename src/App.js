@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-//import _ from 'https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js';
+// import _ from 'https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js';
 
 import './App.css';
 import Header from './components/Header';
@@ -12,9 +12,8 @@ import Footer from './components/Footer';
 import Product from './components/Product';
 
 function App() {
-  
   useEffect(() => {
-    /*===== MENU SHOW =====*/
+    /*= ==== MENU SHOW ===== */
     const showMenu = (toggleId, navId) => {
       const toggle = document.getElementById(toggleId);
       const nav = document.getElementById(navId);
@@ -27,7 +26,7 @@ function App() {
     };
     showMenu('nav-toggle', 'nav-menu');
 
-    /*==================== REMOVE MENU MOBILE ====================*/
+    /*= =================== REMOVE MENU MOBILE ==================== */
     const navLink = document.querySelectorAll('.nav__link');
 
     function linkAction() {
@@ -37,7 +36,7 @@ function App() {
     }
     navLink.forEach((n) => n.addEventListener('click', linkAction));
 
-    /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+    /*= =================== SCROLL SECTIONS ACTIVE LINK ==================== */
     const sections = document.querySelectorAll('section[id]');
 
     function scrollActive() {
@@ -49,9 +48,9 @@ function App() {
         const sectionId = current.getAttribute('id');
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active');
+          document.querySelector(`.nav__menu a[href*=${sectionId}]`).classList.add('active');
         } else {
-          document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active');
+          document.querySelector(`.nav__menu a[href*=${sectionId}]`).classList.remove('active');
         }
       });
     }
@@ -72,26 +71,25 @@ function App() {
     // sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
   }, []);
 
-  
   return (
     <main className="l-main">
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../assets/css/styles.css" />
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet' />
-        <title>Yoseph's Portfolio website</title>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js" integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <div className="App">
-            <Header />
-            <Home />
-            <About />
-            <Skills />
-            <Works />
-            <Product/>
-            <Contact />
-            <Footer />
-        </div>
+      <meta charSet="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="../assets/css/styles.css" />
+      <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+      <title>Yoseph's Portfolio website</title>
+      <script src="https://unpkg.com/scrollreveal" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js" integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+      <div className="App">
+        <Header />
+        <Home />
+        <About />
+        <Skills />
+        <Works />
+        <Product />
+        <Contact />
+        <Footer />
+      </div>
     </main>
   );
 }
