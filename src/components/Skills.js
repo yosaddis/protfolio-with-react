@@ -6,7 +6,8 @@ const Skills = () => (
   <section id="skills">
     <h2 className="section-title">Professional Skills</h2>
     <p>
-      Here, I'll detail my core competencies and the technologies that enable me to build cutting-edge
+      Here, I&apos;ll detail my core competencies and the technologies
+      that enable me to build cutting-edge
       software solutions and create positive change in the digital world.
     </p>
     <div className="skills__container bd-grid">

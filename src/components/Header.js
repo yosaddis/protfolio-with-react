@@ -1,7 +1,5 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import '../assets/css/styles.css';
-// import '../assets/css/mobNav.css'
-import { useEffect } from 'react';
 
 const Header = () => {
   // Menu toggle function
