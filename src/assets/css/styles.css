@@ -355,7 +355,6 @@ img {
   border-radius: 0.5rem;
 }
 
-
 /* ===== CONTACT ===== */
 .contact__input {
   width: 100%;
@@ -378,7 +377,6 @@ img {
 }
 
 /* ===== FOOTER ===== */
-
 
 /* ===== MEDIA QUERIES===== */
 @media screen and (max-width: 320px) {
