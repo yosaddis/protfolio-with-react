@@ -1,66 +1,65 @@
 .products {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
-    grid-template-rows: 200px repeat(1, 6fr);
-  }
-  
-  .products h1:first-child {
-    padding: 1em;
-  }
-  
-  .products h2:first-child::after {
-    content: '';
-    height: 4px;
-    width: 48px;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    top: 20px;
-    z-index: -1;
-    border-radius: 8px;
-  }
-  /* Adjustments for smaller screens */
-  @media (max-width: 768px) {
-    .products {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
-  /* Adjustments for even smaller screens */
-  @media (max-width: 576px) {
-    .products {
-      padding: 10px;
-    }
-  }
-  
-  
-  .product__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-  
-  .product__img {
-    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  grid-template-rows: 200px repeat(1, 6fr);
+}
+
+.products h1:first-child {
+  padding: 1em;
+}
+
+.products h2:first-child::after {
+  content: '';
+  height: 4px;
+  width: 48px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 20px;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .products {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition: transform 1s;
   }
-  
-  .product__img img {
-    max-width: 100%;
-    max-height: 200px;
-    object-fit: cover;
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 576px) {
+  .products {
+    padding: 10px;
   }
-  
-  .product__img:hover {
-    transform: scale(1.1);
-  }
-  
+}
+
+.product__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.product__img {
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+
+.product__img img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.product__img:hover {
+  transform: scale(1.1);
+}
