@@ -71,7 +71,7 @@ const Works = () => {
           <ProjectCard
             key={project.id}
             image={project.image}
-            project_title={project.projectTitle}
+            projectTitle={project.projectTitle}
             languages={project.languages}
             link={project.link}
           />
