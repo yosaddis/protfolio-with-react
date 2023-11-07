@@ -25,7 +25,12 @@ const ProjectCard = ({
 ProjectCard.propTypes = {
   image: PropTypes.string.isRequired,
   projectTitle: PropTypes.string.isRequired,
-  languages: PropTypes.isRequired,
+  languages: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired, // Assuming 'id' is a number
+      name: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
   link: PropTypes.string.isRequired,
 };
 
