@@ -289,6 +289,10 @@ img {
 }
 
 /* ===== SKILLS ===== */
+
+.skills__section {
+  padding: 64px 0 48px;
+}
 .skills__container {
   row-gap: 2rem;
   text-align: center;
