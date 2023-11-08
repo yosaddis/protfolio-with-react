@@ -1,18 +1,16 @@
-import React from "react";
-import "../assets/css/styles.css";
+import React from 'react';
+import '../assets/css/styles.css';
+import '../assets/css/footer.css';
 
-const Footer = () => {
-    return (
-    <footer className="footer">
-        <p className="footer__title">Yoseph</p>
-        <div className="footer__social">
-            <a href="#" className="footer__icon"><i className='bx bxl-facebook' ></i></a>
-            <a href="#" className="footer__icon"><i className='bx bxl-instagram' ></i></a>
-            <a href="#" className="footer__icon"><i className='bx bxl-twitter' ></i></a>
-        </div>
-        <p className="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-    </footer>
-    )
-}
+const Footer = () => (
+  <footer className="footer">
+    <div className="footer__social">
+      <a href="https://www.github.com/yosaddis" className="footer__icon" alt="github icon"><i className="bx bxl-github" /></a>
+      <a href="https://www.linkedIn.com/in/yoseph-addisu-abate" className="footer__icon" alt="linked in icon"><i className="bx bxl-linkedin" /></a>
+      <a href="https://www.twitter.com/yosaddis" className="footer__icon" alt="X icon"><i className="bx bxl-twitter" /></a>
+    </div>
+    <p className="footer__copy">&#169; Yosaddis. All rigths reserved</p>
+  </footer>
+);
 
 export default Footer;
