@@ -87,7 +87,7 @@ Clone this repository to your desired folder:
 ```sh
   cd your-prefered-folder
 
-  git clone https://github.com/yosaddis/portfolio-app.git
+  git clone https://github.com/yosaddis/protfolio-with-react.git
 ```
 
 ### Install
@@ -113,14 +113,6 @@ To run the project, execute the following command:
 ```sh
   npm start
 
-```
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  npm test
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -151,7 +143,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yosaddis/portfolio-app/issues).
+Feel free to check the [issues page](https://github.com/yosaddis/protfolio-with-react/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,7 +160,6 @@ If you like this project...
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - I would like to thank Microverse for this opportunity to learn and W3Schools for the information shared in their site.
-- I would like to thank you [codeAprogram](https://reactjsexample.com/a-portfolio-page-using-react-js-and-tailwind-css/) for his dedication and generosity for making it availabe the open source portfolio code that I insitially used for my portfolio.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
