@@ -1,7 +1,5 @@
 import React from 'react';
-// import '../assets/css/styles.css';
 import '../assets/css/work.css';
-// import '../assets/css/projectCard.css';
 import ProjectCard from './ProjectCard';
 
 import Awsomebooks from '../assets/img/Awsome-Books.png';
