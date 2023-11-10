@@ -275,7 +275,7 @@ img {
 /* ===== ABOUT ===== */
 .about__container {
   row-gap: 2rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .about__subtitle {
@@ -283,16 +283,16 @@ img {
 }
 
 .about__img {
-  justify-self: center;
+  justify-self: self-start;
 }
 
 .about__img img {
-  width: 200px;
+  width: 300px;
   border-radius: 0.5rem;
 }
 
 .about__text {
-  text-align: justify;
+  text-align: wrap;
 }
 
 /* ===== SKILLS ===== */
