@@ -26,9 +26,9 @@ const Home = () => (
     </div>
 
     <div className="home__social">
-      <a href="https://www.linkedin.com/in/yoseph-addisu-abate/" className="home__social-icon"><i className="bx bxl-linkedin" style={{ fontSize: '48px' }} alt="linked-in-icon" /></a>
-      <a href="https://twitter.com/yosaddis" className="home__social-icon"><i className="bx bxl-twitter" style={{ fontSize: '48px' }} alt="x-icon" /></a>
-      <a href="https://github.com/yosaddis" className="home__social-icon"><i className="bx bxl-github" style={{ fontSize: '48px' }} alt="github-icon" /></a>
+      <a href="https://www.linkedin.com/in/yoseph-addisu-abate/" className="home__social-icon" target="_blank" rel="noreferrer"><i className="bx bxl-linkedin" style={{ fontSize: '48px' }} alt="linked-in-icon" /></a>
+      <a href="https://twitter.com/yosaddis" className="home__social-icon" target="_blank" rel="noreferrer"><i className="bx bxl-twitter" style={{ fontSize: '48px' }} alt="x-icon" /></a>
+      <a href="https://github.com/yosaddis" className="home__social-icon" target="_blank" rel="noreferrer"><i className="bx bxl-github" style={{ fontSize: '48px' }} alt="github-icon" /></a>
     </div>
 
     <div className="home__img">

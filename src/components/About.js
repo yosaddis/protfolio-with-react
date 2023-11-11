@@ -29,7 +29,7 @@ const About = () => {
             and I quickly transitioned to developing a Hospital Management System
             in C# and SQL, which led to founding
             {' '}
-            <a href="https://www.sefedsystems.com">Sefed Systems</a>
+            <a href="https://www.sefedsystems.com" target="_blank" rel="noreferrer">Sefed Systems</a>
             .
             Currently, I&apos;m broadening my horizons through Microverse while
             actively working on diverse projects for various companies.
