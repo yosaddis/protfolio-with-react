@@ -6,13 +6,14 @@ import '../assets/css/footer.css';
 import '../assets/css/projectCard.css';
 
 const ProjectCard = ({
-  image, projectTitle, languages, link,
+  image, projectTitle, languages, link, discrption,
 }) => (
   <div className="work-card">
     <div className="category-image">
       <img src={image} alt="skill icon" />
     </div>
     <h3 className="skill-name">{projectTitle}</h3>
+    <p className="skill-description">{discrption}</p>
     <ul className="languages-list">
       {languages.map((language) => (
         <li key={language.id}>{language.name}</li>
@@ -25,6 +26,7 @@ const ProjectCard = ({
 ProjectCard.propTypes = {
   image: PropTypes.string.isRequired,
   projectTitle: PropTypes.string.isRequired,
+  discrption: PropTypes.string.isRequired,
   languages: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired, // Assuming 'id' is a number

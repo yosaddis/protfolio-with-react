@@ -13,6 +13,7 @@ const Works = () => {
       id: 1,
       image: Awsomebooks,
       projectTitle: 'Awsome Books',
+      description: '.',
       languages: [
         { id: 1, name: 'Java Script' },
         { id: 2, name: 'HTML' },
@@ -24,6 +25,7 @@ const Works = () => {
       id: 2,
       image: Bookstore,
       projectTitle: 'Book Store',
+      description: '.',
       languages: [
         { id: 1, name: 'React' },
         { id: 2, name: 'Java Script' },
@@ -36,6 +38,7 @@ const Works = () => {
       id: 3,
       image: Rubyonrails,
       projectTitle: 'Expense Tracker',
+      description: '.',
       languages: [
         { id: 1, name: 'Ruby' },
         { id: 2, name: 'Ruby on Rails' },
@@ -49,6 +52,7 @@ const Works = () => {
       id: 4,
       image: MealDB,
       projectTitle: 'Eat Healthy',
+      description: '.',
       languages: [
         { id: 1, name: 'JavaScript' },
         { id: 2, name: 'REstAPI' },
@@ -72,6 +76,7 @@ const Works = () => {
             projectTitle={project.projectTitle}
             languages={project.languages}
             link={project.link}
+            description={project.description}
           />
         ))}
       </div>
