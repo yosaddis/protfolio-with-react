@@ -95,7 +95,7 @@
   font-weight: 600;
   padding: 1em 0.5em;
   margin: 1em 0.5em;
-  border-radius: 5px;
+  border-radius: 3px;
   transition: background-color 0.3s ease; /* Animation for background color */
   cursor: pointer;
 }
