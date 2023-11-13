@@ -9,7 +9,7 @@ const ProjectCard = ({
   image, projectTitle, languages, link, discrption,
 }) => (
   <div className="work-card">
-    <div className="category-image">
+    <div className="work-thumbnail">
       <img src={image} alt="skill icon" />
     </div>
     <h3 className="skill-name">{projectTitle}</h3>
@@ -20,6 +20,7 @@ const ProjectCard = ({
       ))}
     </ul>
     <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">View Project</a>
+    <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">Live Demo</a>
   </div>
 );
 
