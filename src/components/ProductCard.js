@@ -6,7 +6,7 @@ import '../assets/css/styles.css';
 const ProductCard = ({
   image, projectTitle, description, link,
 }) => (
-  <div className="product-card">
+  <div className="product-card fade-in-image">
     <div className="product__img">
       <img src={image} alt="skill icon" />
     </div>
