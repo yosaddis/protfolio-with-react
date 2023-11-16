@@ -19,8 +19,10 @@ const ProjectCard = ({
         <li key={language.id}>{language.name}</li>
       ))}
     </ul>
-    <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">View Project</a>
-    <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">Live Demo</a>
+    <div className="project-buttons">
+      <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">Git</a>
+      <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">Demo</a>
+    </div>
   </div>
 );
 
