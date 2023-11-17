@@ -548,3 +548,16 @@ img {
     display: none;
   } **/
 }
+
+/** animations */
+.bg {
+  position: absolute;
+  animation: slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #fed900 50%, #d71920 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
