@@ -13,19 +13,20 @@ const Works = () => {
       id: 1,
       image: Awsomebooks,
       projectTitle: 'Awsome Books',
-      description: 'Project built with ES6.s',
+      projectDescription: 'Project built with ES6.',
       languages: [
         { id: 1, name: 'Java Script' },
         { id: 2, name: 'HTML' },
         { id: 3, name: 'CSS' },
       ],
       link: 'https://github.com/yosaddis/Awesome-Books-ES6',
+      demoLink: 'https://yosaddis.github.io/Awesome-Books-ES6/',
     },
     {
       id: 2,
       image: Bookstore,
       projectTitle: 'Book Store',
-      description: 'Project built with React.',
+      projectDescription: 'Project built with React.',
       languages: [
         { id: 1, name: 'React' },
         { id: 2, name: 'Java Script' },
@@ -33,34 +34,35 @@ const Works = () => {
         { id: 4, name: 'CSS' },
       ],
       link: 'https://github.com/yosaddis/Book-store-react',
+      demoLink: 'https://yosaddis.github.io/Book-store-react/',
     },
     {
       id: 3,
       image: Rubyonrails,
       projectTitle: 'Expense Tracker',
-      description: 'Project built with Ruby on Rails',
+      projectDescription: 'Project built with Ruby on Rails',
       languages: [
         { id: 1, name: 'Ruby' },
         { id: 2, name: 'Ruby on Rails' },
         { id: 3, name: 'HTML' },
         { id: 4, name: 'CSS' },
-        { id: 5, name: 'Bootstrap' },
       ],
       link: 'https://github.com/yosaddis/ruby-on-rails-capstone',
+      demoLink: 'https://rails-capstone-65y7.onrender.com/',
     },
     {
       id: 4,
       image: MealDB,
       projectTitle: 'Eat Healthy',
-      description: 'Project built with React and Redux.',
+      projectDescription: 'Reciepe website built with React/Redux.',
       languages: [
         { id: 1, name: 'JavaScript' },
         { id: 2, name: 'REstAPI' },
         { id: 3, name: 'HTML5' },
         { id: 4, name: 'JSON' },
-        { id: 5, name: 'Webpack' },
       ],
       link: 'https://github.com/yosaddis/MealDB',
+      demoLink: 'https://eat-healthy.onrender.com/',
     },
     // Add more project data as needed
   ];
@@ -74,9 +76,9 @@ const Works = () => {
             key={project.id}
             image={project.image}
             projectTitle={project.projectTitle}
+            projectDescription={project.projectDescription}
             languages={project.languages}
             link={project.link}
-            description={project.description}
           />
         ))}
       </div>

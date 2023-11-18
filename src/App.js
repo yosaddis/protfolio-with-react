@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-// import _ from 'https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js';
 
 import './App.css';
 import Header from './components/Header';
@@ -56,7 +55,7 @@ function App() {
     }
     window.addEventListener('scroll', scrollActive);
 
-    // /*===== SCROLL REVEAL ANIMATION =====*/
+    // /*= ==== SCROLL REVEAL ANIMATION ===== */
     // const sr = _.ScrollReveal({
     //   origin: 'top',
     //   distance: '60px',
@@ -78,8 +77,6 @@ function App() {
       <link rel="stylesheet" href="../assets/css/styles.css" />
       <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
       <title>Yoseph&apos;s Portfolio website</title>
-      <script src="https://unpkg.com/scrollreveal" />
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/fontawesome.min.js" integrity="sha512-64O4TSvYybbO2u06YzKDmZfLj/Tcr9+oorWhxzE3yDnmBRf7wvDgQweCzUf5pm2xYTgHMMyk5tW8kWU92JENng==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
       <div className="App">
         <Header />
         <Home />
