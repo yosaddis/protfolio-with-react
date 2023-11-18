@@ -39,10 +39,12 @@ const Product = () => {
     <section className="products" id="product">
       <h2 className="section-title">My Products</h2>
       <h2 className="about__subtitle">
-        I can help you build a product , feature or website Look through
-        some of my work and experience!
-        If you like what you see and have a project you need coded,
-        don&apos;t hestiate to contact me.
+        I&apos;m passionate about bringing ideas to life through coding, whether
+        it&apos;s building products, implementing new features, or creating
+        engaging websites. If you&apos;re seeking a skilled developer with
+        a proven track record, I invite you to explore my work and experience.
+        If you like what you see and have a project in mind, don&apos;t hesitate to reach out.
+        I&apos;m here to help turn your vision into a reality!
       </h2>
       <div className="product__container">
         {products.map((product) => (

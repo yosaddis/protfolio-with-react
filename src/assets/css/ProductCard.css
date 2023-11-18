@@ -35,7 +35,7 @@
 }
 
 /* Style the "View Project" link as a button */
-.project-link-button {
+.product-link-button {
   display: block;
   margin-top: auto; /* Align to the bottom */
   background-color: var(--first-color);
