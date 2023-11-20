@@ -13,7 +13,7 @@ const Works = () => {
       id: 1,
       image: Awsomebooks,
       projectTitle: 'Awsome Books',
-      projectDescription: 'Project built with ES6.',
+      projectDescription: 'Book Reading status front-end with Java Script.',
       languages: [
         { id: 1, name: 'Java Script' },
         { id: 2, name: 'HTML' },
@@ -26,7 +26,7 @@ const Works = () => {
       id: 2,
       image: Bookstore,
       projectTitle: 'Book Store',
-      projectDescription: 'Project built with React.',
+      projectDescription: 'A Book Recording website built with React.',
       languages: [
         { id: 1, name: 'React' },
         { id: 2, name: 'Java Script' },
@@ -40,7 +40,7 @@ const Works = () => {
       id: 3,
       image: Rubyonrails,
       projectTitle: 'Expense Tracker',
-      projectDescription: 'Project built with Ruby on Rails',
+      projectDescription: 'Expense tracker app built in Rails with postgresql.',
       languages: [
         { id: 1, name: 'Ruby' },
         { id: 2, name: 'Ruby on Rails' },
