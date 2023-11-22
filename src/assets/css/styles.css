@@ -199,6 +199,13 @@ img {
 }
 
 /* ===== HOME ===== */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+
+  /* Add more styles as needed */
+}
+
 .home {
   position: relative;
   row-gap: 5rem;
