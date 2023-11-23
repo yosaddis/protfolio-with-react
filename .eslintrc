@@ -23,7 +23,7 @@
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
     "no-shadow": "off",
-    "react/no-unknown-property": ["error", { "ignore": ["mask-type"] }],
+    "react/no-unknown-property": ["error", { "ignore": ["mask-type"] }]
   },
   "ignorePatterns": ["dist/", "build/"]
 }
