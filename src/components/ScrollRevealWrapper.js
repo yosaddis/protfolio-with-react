@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ScrollRevealWrapper = ({ children }) => {
   useEffect(() => {
-    ScrollReveal().reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {
+    ScrollReveal().reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .home__img, .about__subtitle, .about__text, .skills__img, .skills__container , .home__social-icon, .skills__data, .work__img, .contact__input, .work-card, .product-card', {
 
       origin: 'top',
       distance: '60px',
