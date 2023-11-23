@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
 import './App.css';
+import ScrollRevealWrapper from './components/ScrollRevealWrapper';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -77,16 +78,18 @@ function App() {
       <link rel="stylesheet" href="../assets/css/styles.css" />
       <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
       <title>Yoseph&apos;s Portfolio website</title>
-      <div className="App">
-        <Header />
-        <Home />
-        <About />
-        <Skills />
-        <Works />
-        <Product />
-        <Contact />
-        <Footer />
-      </div>
+      <ScrollRevealWrapper>
+        <div className="App">
+          <Header />
+          <Home />
+          <About />
+          <Skills />
+          <Works />
+          <Product />
+          <Contact />
+          <Footer />
+        </div>
+      </ScrollRevealWrapper>
     </main>
   );
 }
