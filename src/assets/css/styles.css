@@ -5,30 +5,24 @@
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-
-  /* ===== Colores ===== */
-
-  /* Purple 260 - Red 355 - Blue 224 - Pink 340 */
-
+  /*===== Colores =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-
-  /* ===== Fuente y tipografia ===== */
+  /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --normal-font-size: 0.938rem;
-  --smaller-font-size: 0.75rem;
-
-  /* ===== Margenes ===== */
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  /*===== Margenes =====*/
   --mb-2: 1rem;
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-
-  /* ===== z index ===== */
+  /*===== z index =====*/
   --z-back: -10;
   --z-fixed: 100;
 }
@@ -257,13 +251,6 @@ img {
   width: 360px;
 }
 
-.home_3d {
-  visibility: visible;
-  opacity: 1;
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
-}
-
 /* BUTTONS */
 .button {
   display: inline-block;
@@ -288,6 +275,18 @@ img {
 
 .about__subtitle {
   margin-bottom: var(--mb-2);
+}
+
+.section__detail {
+  margin-bottom: var(--mb-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__detail_text {
+  font-weight: 100;
+  text-align: center;
 }
 
 .about__img {
@@ -376,11 +375,6 @@ img {
 }
 
 .fade-in-image:focus { animation: fadeIn 5s; }
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
 
 /* ===== CONTACT ===== */
 .contact__input {
@@ -556,15 +550,3 @@ img {
   } **/
 }
 
-/** animations */
-.bg {
-  position: absolute;
-  animation: slide 5s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #fed900 50%, #d71920 50%);
-  bottom: 0;
-  left: -50%;
-  opacity: 0.5;
-  right: -50%;
-  top: 0;
-  z-index: -1;
-}
