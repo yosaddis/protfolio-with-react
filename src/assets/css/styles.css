@@ -257,13 +257,6 @@ img {
   width: 360px;
 }
 
-.home_3d {
-  visibility: visible;
-  opacity: 1;
-  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-  transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;
-}
-
 /* BUTTONS */
 .button {
   display: inline-block;
@@ -288,6 +281,18 @@ img {
 
 .about__subtitle {
   margin-bottom: var(--mb-2);
+}
+
+.section__detail {
+  margin-bottom: var(--mb-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__detail_text {
+  font-weight: 100;
+  text-align: center;
 }
 
 .about__img {
@@ -376,11 +381,6 @@ img {
 }
 
 .fade-in-image:focus { animation: fadeIn 5s; }
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
 
 /* ===== CONTACT ===== */
 .contact__input {
@@ -554,17 +554,4 @@ img {
   /** .offcanvas-body{
     display: none;
   } **/
-}
-
-/** animations */
-.bg {
-  position: absolute;
-  animation: slide 5s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #fed900 50%, #d71920 50%);
-  bottom: 0;
-  left: -50%;
-  opacity: 0.5;
-  right: -50%;
-  top: 0;
-  z-index: -1;
 }
