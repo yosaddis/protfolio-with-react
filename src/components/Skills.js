@@ -5,11 +5,13 @@ import '../assets/css/skills.css';
 const Skills = () => (
   <section className="skills__section" id="skills">
     <h2 className="section-title">Professional Skills</h2>
-    <h2 className="about__subtitle">
-      Here, I&apos;ll detail my core competencies and the technologies
-      that enable me to build cutting-edge
-      software solutions and create positive change in the digital world.
-    </h2>
+    <div className="section__detail">
+      <h2 className="section__detail_text">
+        Here, I&apos;ll detail my core competencies and the technologies
+        that enable me to build cutting-edge
+        software solutions and create positive change in the digital world.
+      </h2>
+    </div>
     <div className="skills__container bd-grid">
       <div className="category">
         <h3>Front-End Development</h3>
