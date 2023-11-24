@@ -6,7 +6,7 @@ import '../assets/css/footer.css';
 import '../assets/css/projectCard.css';
 
 const ProjectCard = ({
-  image, projectTitle, projectDescription, languages, link,
+  image, projectTitle, projectDescription, languages, link, demoLink,
 }) => (
   <div className="work-card">
     <div className="work-thumbnail">
@@ -20,8 +20,8 @@ const ProjectCard = ({
       ))}
     </ul>
     <div className="project-buttons">
-      <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">Git</a>
-      <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">Live</a>
+      <a href={link} target="_blank" rel="noopener noreferrer" className="project-link-button">Source Code</a>
+      <a href={demoLink} target="_blank" rel="noopener noreferrer" className="project-link-button">Live</a>
     </div>
   </div>
 );
@@ -37,6 +37,7 @@ ProjectCard.propTypes = {
     }),
   ).isRequired,
   link: PropTypes.string.isRequired,
+  demoLink: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;
