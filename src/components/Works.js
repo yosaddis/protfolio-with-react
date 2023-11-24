@@ -1,19 +1,35 @@
 import React from 'react';
 import '../assets/css/work.css';
 import ProjectCard from './ProjectCard';
-
-import Awsomebooks from '../assets/img/Awsome-Books.png';
-import Bookstore from '../assets/img/Book-Store-app.png';
-import Rubyonrails from '../assets/img/Ruby-on-rails-small.png';
-import MealDB from '../assets/img/MealDB-react-app-small.png';
+import Awsomebooks from '../assets/img/projects/Awsome-Book-app.png';
+import MealDB from '../assets/img/projects/Eat-healthy-app.png';
+import Carrental from '../assets/img/projects/Car-rental-app.png';
+import Calculator from '../assets/img/projects/Math-mgicians-app.png';
 
 const Works = () => {
   const projects = [
     {
       id: 1,
+      image: Carrental,
+      projectTitle: 'Car Rental Management System',
+      projectDescription: `A full-stack web application that enables users to view a list of cars, 
+      access detailed information about each car, rent cars, add new car items, delete existing car items, 
+      and list all rentals associated with a specific user.`,
+      languages: [
+        { id: 1, name: 'React with Redux' },
+        { id: 2, name: 'Ruby on Rails' },
+        { id: 3, name: 'PostgresSQL' },
+        { id: 4, name: 'Bootstrap' },
+      ],
+      link: 'https://github.com/yosaddis/Full-Stack-Capstone-Backend',
+      demoLink: 'https://rent-a-car-front-end.onrender.com/',
+    },
+    {
+      id: 2,
       image: Awsomebooks,
       projectTitle: 'Awsome Books',
-      projectDescription: 'Book Mgt website built with JS.',
+      projectDescription: `Awsome Book is a web application that uses to registe and display Books we liked.
+       The app make use of the browsers local storage to store data.`,
       languages: [
         { id: 1, name: 'Java Script' },
         { id: 2, name: 'HTML' },
@@ -23,38 +39,26 @@ const Works = () => {
       demoLink: 'https://yosaddis.github.io/Awesome-Books-ES6/',
     },
     {
-      id: 2,
-      image: Bookstore,
-      projectTitle: 'Book Store',
-      projectDescription: 'Book Reading app front-end.',
+      id: 3,
+      image: Calculator,
+      projectTitle: 'Calculator',
+      projectDescription: 'This simple calculator is designed to perform basic arithmetic calculations quickly and easily.',
       languages: [
         { id: 1, name: 'React' },
         { id: 2, name: 'Java Script' },
-        { id: 3, name: 'HTML' },
-        { id: 4, name: 'CSS' },
+        { id: 3, name: 'CSS' },
       ],
-      link: 'https://github.com/yosaddis/Book-store-react',
-      demoLink: 'https://yosaddis.github.io/Book-store-react/',
-    },
-    {
-      id: 3,
-      image: Rubyonrails,
-      projectTitle: 'Expense Tracker',
-      projectDescription: 'Expense tracking app back-end.',
-      languages: [
-        { id: 1, name: 'Ruby' },
-        { id: 2, name: 'Ruby on Rails' },
-        { id: 3, name: 'HTML' },
-        { id: 4, name: 'CSS' },
-      ],
-      link: 'https://github.com/yosaddis/ruby-on-rails-capstone',
-      demoLink: 'https://rails-capstone-65y7.onrender.com/',
+      link: 'https://github.com/yosaddis/math-magicians',
+      demoLink: 'https://math-magicians-vxz7.onrender.com/calculator',
     },
     {
       id: 4,
       image: MealDB,
       projectTitle: 'Eat Healthy',
-      projectDescription: 'Reciepe website built with React/Redux.',
+      projectDescription: `"Eat Healthy" is a website featuring recipes for nutritious dishes sourced from an external API. 
+      The site not only showcases a variety of healthy meals but also allows users to express their preferences by liking dishes.
+       Additionally, users can provide valuable feedback by commenting on recipes after trying them.
+      `,
       languages: [
         { id: 1, name: 'JavaScript' },
         { id: 2, name: 'REstAPI' },
@@ -79,6 +83,7 @@ const Works = () => {
             projectDescription={project.projectDescription}
             languages={project.languages}
             link={project.link}
+            demoLink={project.demoLink}
           />
         ))}
       </div>
