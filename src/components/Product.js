@@ -2,33 +2,37 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import '../assets/css/Product.css';
 import '../assets/css/ProductCard.css';
+import geezNumbers from '../assets/img/products/Geez-Numbers-app.png';
+import yetuga from '../assets/img/products/yetuga-app.png';
+import easyRace from '../assets/img/products/easy-race-app.png';
+import sefedHmis from '../assets/img/products/Sefed-HMIS.png';
 
 const Product = () => {
   const products = [
     {
       id: 1,
-      image: 'https://play-lh.googleusercontent.com/APeEfCa_hcN58tXn509xSpwA-Eu9TZkFnIZ3CexA69ENRqKKu21FQ_SzaDmM-G2tTIo=w240-h480-rw',
+      image: geezNumbers,
       projectTitle: 'Geez Numbers',
       description: 'A numbers learning app for a geez language.',
       link: 'https://play.google.com/store/apps/details?id=com.sefed.geeznumbers',
     },
     {
       id: 2,
-      image: 'https://play-lh.googleusercontent.com/f5bD07KDWfkh66EN24ypXSPmuFjEqmy0yCkecM_cy_xMuB8311DMjEpmZn3rHGSFke-v=w240-h480-rw',
+      image: yetuga,
       projectTitle: 'Yetuga',
       description: 'A bussiness directory app in Amharic language.',
       link: 'https://play.google.com/store/apps/details?id=com.sefed.yetuga',
     },
     {
       id: 3,
-      image: 'https://sefedsystems.com/wp-content/uploads/2020/01/home_hosting_pricing_pic_4.png',
+      image: easyRace,
       projectTitle: 'Easy Race',
       description: 'Elite athlets race result management system.',
       link: 'https://sefedsystems.com/application-and-features/',
     },
     {
       id: 4,
-      image: 'https://sefedsystems.com/wp-content/uploads/2023/04/Login-1536x824.png',
+      image: sefedHmis,
       projectTitle: 'Sefed HMIS',
       description: 'Hospital Management Information System',
       link: 'https://sefedsystems.com/sefed-electronic-medical-record/',
@@ -44,8 +48,6 @@ const Product = () => {
           it&apos;s building products, implementing new features, or creating
           engaging websites. If you&apos;re seeking a skilled developer with
           a proven track record, I invite you to explore my work and experience.
-          If you like what you see and have a project in mind, don&apos;t hesitate to reach out.
-          I&apos;m here to help turn your vision into a reality!
         </h2>
       </div>
       <div className="product__container">
