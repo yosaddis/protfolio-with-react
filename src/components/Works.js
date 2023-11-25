@@ -1,10 +1,10 @@
 import React from 'react';
 import '../assets/css/work.css';
 import ProjectCard from './ProjectCard';
-import Awsomebooks from '../assets/img/projects/Awsome-Book-app.png';
-import MealDB from '../assets/img/projects/Eat-healthy-app.png';
-import Carrental from '../assets/img/projects/Car-rental-app.png';
-import Calculator from '../assets/img/projects/Math-mgicians-app.png';
+import Awsomebooks from '../assets/img/projects/Awsome-Book-app.webp';
+import MealDB from '../assets/img/projects/Eat-healthy-app.webp';
+import Carrental from '../assets/img/projects/Car-rental-app.webp';
+import Calculator from '../assets/img/projects/Math-mgicians-app.webp';
 
 const Works = () => {
   const projects = [

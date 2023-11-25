@@ -2,10 +2,10 @@ import React from 'react';
 import ProductCard from './ProductCard';
 import '../assets/css/Product.css';
 import '../assets/css/ProductCard.css';
-import geezNumbers from '../assets/img/products/Geez-Numbers-app.png';
-import yetuga from '../assets/img/products/yetuga-app.png';
-import easyRace from '../assets/img/products/easy-race-app.png';
-import sefedHmis from '../assets/img/products/Sefed-HMIS.png';
+import geezNumbers from '../assets/img/products/Geez-Numbers-app.webp';
+import yetuga from '../assets/img/products/yetuga-app.webp';
+import easyRace from '../assets/img/products/easy-race-app.webp';
+import sefedHmis from '../assets/img/products/Sefed-HMIS.webp';
 
 const Product = () => {
   const products = [
