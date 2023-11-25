@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/styles.css';
-import perfil from '../assets/img/perfil.png';
+import perfil from '../assets/img/perfil.webp';
 
 const Home = () => (
   <section className="home bd-grid" id="home">
