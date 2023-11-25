@@ -12,12 +12,10 @@ const Works = () => {
       id: 1,
       image: Carrental,
       projectTitle: 'Car Rental Management System',
-      projectDescription: `A full-stack web application that enables users to view a list of cars, 
-      access detailed information about each car, rent cars, add new car items, delete existing car items, 
-      and list all rentals associated with a specific user.`,
+      projectDescription: 'A full-stack web application that enables users to view a list of cars.',
       languages: [
-        { id: 1, name: 'React with Redux' },
-        { id: 2, name: 'Ruby on Rails' },
+        { id: 1, name: 'React' },
+        { id: 2, name: 'Rails' },
         { id: 3, name: 'PostgresSQL' },
         { id: 4, name: 'Bootstrap' },
       ],
@@ -28,8 +26,7 @@ const Works = () => {
       id: 2,
       image: Awsomebooks,
       projectTitle: 'Awsome Books',
-      projectDescription: `Awsome Book is a web application that uses to registe and display Books we liked.
-       The app make use of the browsers local storage to store data.`,
+      projectDescription: 'Awsome Book is a web application that uses to registe and display Books we liked.',
       languages: [
         { id: 1, name: 'Java Script' },
         { id: 2, name: 'HTML' },
@@ -55,10 +52,7 @@ const Works = () => {
       id: 4,
       image: MealDB,
       projectTitle: 'Eat Healthy',
-      projectDescription: `"Eat Healthy" is a website featuring recipes for nutritious dishes sourced from an external API. 
-      The site not only showcases a variety of healthy meals but also allows users to express their preferences by liking dishes.
-       Additionally, users can provide valuable feedback by commenting on recipes after trying them.
-      `,
+      projectDescription: '"Eat Healthy" is a website featuring recipes for nutritious dishes sourced from an external API.',
       languages: [
         { id: 1, name: 'JavaScript' },
         { id: 2, name: 'REstAPI' },
